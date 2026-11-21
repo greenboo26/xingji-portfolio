@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>行迹 · 研究地形预览</title>
+<link rel="stylesheet" href="terrain-preview.css?v=1">
+<script src="terrain-preview-data.js?v=1" defer></script>
+<script src="terrain-preview.js?v=1" defer></script>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+</head>
+<body>
+<header><a class="brand" href="atlas.html">行迹<span>↗</span></a><span class="edition">地形预览 · 01</span><a href="atlas.html#terrain">返回现有页面 ↗</a></header>
+<main>
+<div class="intro"><div><p class="eyebrow">PBL / 2026.11.03—11.17</p><h1>沿着问题，走到设计。</h1></div><div class="view-controls" aria-label="地图视角"><button data-view="angle" aria-pressed="true">斜视</button><button data-view="top" aria-pressed="false">俯视</button><button id="zoom" aria-pressed="false">放大查看 ＋</button></div></div>
+<section class="map-frame" aria-label="二十个研究停靠点的纸艺地形">
+<div class="map-scroll" tabindex="0" aria-label="地图画幅，放大后可横向滚动"><div class="map-art"><svg id="terrain" viewBox="-30 15 1200 720" aria-hidden="true"></svg><div id="pins"></div></div></div>
+<div class="map-caption"><span><i></i><span class="pan-hint">左右滑动查看 · </span>20 处记录 · 点一下展开，再点收回</span><span class="caption-note">研究与设计历程 / 纸艺地形示意</span></div>
+<aside id="peek" hidden aria-label="当前选中的记录"><button id="peek-close" aria-label="收回当前记录">×</button><p id="peek-meta"></p><h2 id="peek-title"></h2><p id="peek-status"></p><a href="#selections" id="peek-link">查看展开记录 ↓</a></aside>
+</section>
+<div class="under-map"><p>早期研究 <span>／</span> 证据与游戏探索 <span>／</span> 亲子交互设计 <span>／</span> 近期讨论</p><span>沿河探索 ↓</span></div>
+<section id="selections" aria-label="已展开的研究记录"><p id="empty">选择河道上的小点，展开这一段研究。</p></section>
+<div class="index"><details><summary>查看全部 20 处记录 <span>＋</span></summary><div id="index-list"></div></details></div>
+<p class="boundary">本页为独立预览。节点依据已核资料组织；方案、提议、交付与待验证状态分别标注。河流与地形不表示实际地理或研究效果。</p>
+<div id="announce" class="sr-only" aria-live="polite"></div>
+</main>
+</body></html>

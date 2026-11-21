@@ -1,0 +1,153 @@
+/* Generated from river-tabs.css by design/build_atlas_terrain_styles.py. */
+.atlas-terrain{color-scheme:light;--ink:#302b3d;--muted:#83788c;--paper:#f4f1eb;--purple:#604686;--rule:#d9d2db}
+.atlas-terrain *{box-sizing:border-box}
+.atlas-terrain{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei",sans-serif}
+.atlas-terrain a{color:inherit;text-decoration:none}
+.atlas-terrain button{color:inherit;font:inherit;cursor:pointer}
+.atlas-terrain header{max-width:1400px;margin:auto;padding:23px 42px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);border-bottom:1px solid var(--rule)}
+.atlas-terrain .brand{font-family:SimSun,serif;font-size:25px;color:var(--ink)}
+.atlas-terrain .brand span{font-family:serif;font-size:17px;margin-left:13px}
+.atlas-terrain main{max-width:1360px;margin:auto;padding:36px 42px}
+.atlas-terrain .intro{display:flex;align-items:end;justify-content:space-between;margin-bottom:28px;gap:25px}
+.atlas-terrain .eyebrow{font-family:Consolas,monospace;font-size:11px;letter-spacing:.14em;color:var(--purple);margin:0 0 15px}
+.atlas-terrain h1{font-family:SimSun,"Songti SC",serif;font-size:clamp(27px,3vw,43px);font-weight:400;margin:0;line-height:1.4}
+.atlas-terrain .intro-note{font-size:13px;line-height:1.9;color:var(--muted);margin:0}
+.atlas-terrain .study{background:#ece8ec;border:1px solid #d5ced8}
+.atlas-terrain .toolbar{display:flex;justify-content:space-between;align-items:center;padding:14px 21px;font-size:12px}
+.atlas-terrain .toolbar small{color:var(--muted);font-size:11px;margin-left:12px}
+.atlas-terrain .toolbar button{background:none;border:0;margin-left:15px;padding:5px 0;border-bottom:1px solid transparent}
+.atlas-terrain .toolbar button[aria-pressed=true]{border-color:var(--purple);color:var(--purple)}
+.atlas-terrain .viewport{overflow:auto;overscroll-behavior-x:contain;scrollbar-color:#c7b9d2 transparent;scrollbar-width:thin;perspective:1800px}
+.atlas-terrain .board-wrap{width:100%;padding:0 20px 8px;transform-origin:center;transform:rotateX(15deg) rotateZ(-2deg);transition:transform .3s ease}
+.atlas-terrain .viewport.top .board-wrap{transform:none}
+.atlas-terrain .viewport.zoom .board-wrap{width:135%;min-width:1000px}
+.atlas-terrain svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 16px 14px #4033491c)}
+.atlas-terrain .paper-face{stroke:#fff;stroke-opacity:.36;stroke-width:.85;stroke-linejoin:round}
+.atlas-terrain .grain{pointer-events:none;opacity:.23}
+.atlas-terrain .tab-control{cursor:pointer;outline:none}
+.atlas-terrain .tab-hit{fill:transparent;pointer-events:all}
+.atlas-terrain .focus-outline{fill:none;stroke:#604686;stroke-width:1.8;stroke-dasharray:3 4;opacity:0;pointer-events:none}
+.atlas-terrain .tab-control:focus-visible .focus-outline{opacity:1}
+.atlas-terrain .tab-hint{opacity:0;pointer-events:none;fill:#f8f4ed;stroke:#b8aac8;stroke-width:.5}
+.atlas-terrain .hint-label{font:16px SimSun,serif;fill:#51405f;pointer-events:none;opacity:0}
+.atlas-terrain .tab-control:hover .tab-hint,.atlas-terrain .tab-control:hover .hint-label,.atlas-terrain .tab-control:focus-visible .tab-hint,.atlas-terrain .tab-control:focus-visible .hint-label{opacity:1}
+.atlas-terrain .tab-control[aria-expanded=true] .tab-hint,.atlas-terrain .tab-control[aria-expanded=true] .hint-label{opacity:0}
+.atlas-terrain .paper-title{font:21px SimSun,"Songti SC",serif;fill:#44374f;letter-spacing:1px;pointer-events:none}
+.atlas-terrain .caption{border-top:1px solid #ddd5df;padding:12px 21px;display:flex;justify-content:space-between;font-size:11px;color:#7d6f89;background:#f4f0f2}
+.atlas-terrain .tab-index{display:flex;gap:28px;padding:24px 0 20px}
+.atlas-terrain .tab-index button{padding:8px 0;background:transparent;border:0;border-bottom:1px solid var(--rule);font-size:13px;min-height:44px}
+.atlas-terrain .tab-index button:after{content:" ↗";color:#a191b3}
+.atlas-terrain .tab-index button[aria-expanded=true]{color:var(--purple);border-color:var(--purple)}
+.atlas-terrain .tab-index button[aria-expanded=true]:after{content:" −"}
+.atlas-terrain #records{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;min-height:80px}
+.atlas-terrain #empty{grid-column:1/-1;margin:12px 0 25px;font:19px SimSun,serif;color:#9c8da5}
+.atlas-terrain article{border-top:1px solid #cfc3d8;padding:17px 0 12px}
+.atlas-terrain article[hidden]{display:none}
+.atlas-terrain article .meta{color:var(--muted);font:11px Consolas,monospace;margin:0 0 10px}
+.atlas-terrain article h2{font:25px SimSun,serif;margin:0 0 13px;font-weight:400}
+.atlas-terrain article p{font-size:13px;line-height:1.9;margin:8px 0}
+.atlas-terrain article .status{font-size:11px;color:var(--purple)}
+.atlas-terrain article a{font-size:12px;border-bottom:1px solid #b6a9c5}
+.atlas-terrain footer{margin-top:27px;border-top:1px solid var(--rule);padding-top:17px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:11px;line-height:1.8}
+.atlas-terrain footer p{margin:0;max-width:70%}
+.atlas-terrain .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.atlas-terrain button:focus-visible,.atlas-terrain a:focus-visible,.atlas-terrain .viewport:focus-visible{outline:2px solid #725797;outline-offset:5px}
+.atlas-terrain .mobile-hint{display:none}
+@media (max-width:760px){.atlas-terrain header{padding:18px 20px}
+.atlas-terrain header>span{display:none}
+.atlas-terrain main{padding:28px 18px}
+.atlas-terrain .intro{display:block;margin-bottom:22px}
+.atlas-terrain .intro-note{margin-top:14px}
+.atlas-terrain .board-wrap{width:800px;padding:10px 18px 18px}
+.atlas-terrain .viewport.zoom .board-wrap{width:1000px}
+.atlas-terrain .toolbar{padding:12px}
+.atlas-terrain .toolbar small{display:none}
+.atlas-terrain .caption{padding:12px;font-size:10px;gap:12px}
+.atlas-terrain .caption>span:last-child{display:none}
+.atlas-terrain .mobile-hint{display:inline}
+.atlas-terrain .tab-index{gap:20px;justify-content:space-between}
+.atlas-terrain .tab-index button{font-size:12px}
+.atlas-terrain #records{grid-template-columns:1fr}
+.atlas-terrain .intro-note br{display:none}
+.atlas-terrain footer{display:block}
+.atlas-terrain footer p{max-width:none;margin-bottom:12px}}
+@media (prefers-reduced-motion:reduce){.atlas-terrain .board-wrap{transition:none}}
+.atlas-terrain .viewport{perspective:none}
+.atlas-terrain .board-wrap{transform:none!important;transition:none;width:100%;padding:0 20px 8px}
+.atlas-terrain .viewport.zoom .board-wrap{width:135%;min-width:760px}
+.atlas-terrain #paper-map{touch-action:none;cursor:grab}
+.atlas-terrain .rotating #paper-map{cursor:grabbing}
+.atlas-terrain .rotating .tab-hint,.atlas-terrain .rotating .hint-label{opacity:0!important}
+.atlas-terrain .toolbar>div{display:flex;flex-wrap:wrap;justify-content:flex-end}
+.atlas-terrain .tab-control{pointer-events:all}
+@media (max-width:760px){.atlas-terrain .board-wrap{width:100%;padding:0 6px 8px}
+.atlas-terrain .viewport.zoom .board-wrap{width:760px}
+.atlas-terrain .toolbar{gap:10px;align-items:start}
+.atlas-terrain .toolbar>span{white-space:nowrap;padding-top:5px}
+.atlas-terrain .toolbar button{font-size:11px;margin-left:12px}
+.atlas-terrain .caption{font-size:11px}
+.atlas-terrain #paper-map{min-height:230px}
+.atlas-terrain .viewport.zoom #paper-map{min-height:0}}
+.atlas-terrain .terrain-piece{pointer-events:all;cursor:pointer}
+.atlas-terrain .terrain-piece .paper-face{pointer-events:all}
+.atlas-terrain .piece-focus{stroke:#566326;stroke-width:2;stroke-dasharray:5 4;opacity:0}
+.atlas-terrain .terrain-piece:focus-visible .piece-focus{opacity:1}
+.atlas-terrain .terrain-piece:hover .paper-face{stroke:#f6ffd7;stroke-width:1.3}
+.atlas-terrain .slot-hit{pointer-events:all;cursor:pointer}
+.atlas-terrain .caption #hover-label{color:#66517c}
+.atlas-terrain .rotating .terrain-piece{cursor:grabbing}
+.atlas-terrain .viewport{background-image:linear-gradient(#a89eaf13 1px,transparent 1px),linear-gradient(90deg,#a89eaf13 1px,transparent 1px),radial-gradient(ellipse at 45% 42%,#f8f5f2bb,transparent 75%);background-size:48px 48px,48px 48px,100% 100%;background-color:#eee9ed}
+.atlas-terrain .board-wrap{padding:0}
+.atlas-terrain .whole-sheet{cursor:pointer;outline:none}
+.atlas-terrain .whole-sheet:focus-visible{filter:drop-shadow(0 0 2px #566326)}
+.atlas-terrain .tab-index{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px 24px;padding:14px 0 22px}
+.atlas-terrain .tab-index button{text-align:left}
+.atlas-terrain details{margin-top:22px}
+.atlas-terrain summary{cursor:pointer;font-size:13px;color:var(--purple);padding:8px 0}
+.atlas-terrain .close{float:right;background:none;border:0;font-size:12px;color:var(--purple);min-height:36px}
+.atlas-terrain .source{color:var(--muted)}
+@media (max-width:760px){.atlas-terrain .tab-index{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}
+.atlas-terrain .board-wrap{padding:0}
+.atlas-terrain #paper-map{min-height:0}}
+.atlas-terrain .map-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;position:relative;align-items:center;min-width:0}
+.atlas-terrain .viewport{min-width:0}
+.atlas-terrain #paper-card{position:relative;z-index:2;margin:18px 18px 18px 0;padding:18px;background:#f7f4ed;border:1px solid #d4cbd9;box-shadow:5px 7px 0 #c8bdd04d;min-width:0}
+.atlas-terrain #card-empty{font:20px/1.8 SimSun,serif;color:#9b8ba6;margin:22px 0}
+.atlas-terrain #paper-card article{border:0;padding:0;max-height:450px;overflow:auto;scrollbar-width:thin}
+.atlas-terrain #paper-card article h2{font-size:22px;line-height:1.5}
+.atlas-terrain #paper-card article p{font-size:12px;line-height:1.8}
+.atlas-terrain #paper-card .close{min-height:36px;padding:0 0 0 10px}
+.atlas-terrain #paper-card .paper-thumbnail{width:64px;height:44px;margin:0 0 12px;filter:none;overflow:visible}
+.atlas-terrain .related-record{display:block;width:100%;text-align:left;font-size:12px;line-height:1.6;min-height:44px;padding:9px 0;border:0;border-bottom:1px solid #e0d9e3;background:none}
+.atlas-terrain .related-record:after{content:" ↗";color:#8e7d9e}
+.atlas-terrain #card-connector{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;filter:none;z-index:1;overflow:hidden}
+.atlas-terrain #card-connector path{fill:none;stroke:#a4ad6b;stroke-width:1;stroke-dasharray:3 4;opacity:.8}
+.atlas-terrain #opened-papers{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.atlas-terrain #opened-papers:empty{display:none}
+.atlas-terrain #opened-papers button{background:transparent;border:1px solid #d4cbd9;padding:9px 12px;font-size:12px;min-height:40px}
+.atlas-terrain #opened-papers button[aria-current=true]{border-color:#8c9a49;background:#edf1d5}
+.atlas-terrain #opened-papers button[hidden]{display:none}
+.atlas-terrain .whole-sheet:hover>g>path:first-child{stroke:#bdcf7c;stroke-width:1.5}
+.atlas-terrain .whole-sheet.is-current>g>path:first-child{stroke:#a6b95a}
+.atlas-terrain #records[hidden]{display:none!important}
+@media (max-width:999px){.atlas-terrain .map-layout{grid-template-columns:1fr}
+.atlas-terrain #paper-card{margin:0 14px 16px;padding:14px 16px}
+.atlas-terrain #card-empty{font-size:15px;margin:0}
+.atlas-terrain #card-empty br{display:none}
+.atlas-terrain #paper-card article{max-height:none}
+.atlas-terrain #paper-card .paper-thumbnail{float:left;width:50px;height:38px;margin:0 14px 8px 0}
+.atlas-terrain #card-connector{display:none}
+.atlas-terrain #paper-card article h2{font-size:21px}
+.atlas-terrain .map-layout .viewport{max-height:none}}
+@media (max-width:999px){.atlas-terrain #paper-card article h2{clear:both;font-size:20px}}
+/* Home-only placement: keep the existing timeline outside the map scope. */
+.atlas-terrain{margin:0 0 30px;scroll-margin-top:24px;min-width:0}
+.atlas-terrain .toolbar button{min-height:44px}
+.atlas-terrain-note{font:13px/1.9 var(--body);color:var(--muted);margin:12px 0 0}
+.atlas-route-context{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;display:grid;grid-template-columns:1fr 1.5fr;gap:28px}
+.atlas-route-context h3{font:500 clamp(22px,2.4vw,32px)/1.4 var(--display);margin:8px 0}
+.atlas-route-context p{font:14px/1.9 var(--body);color:var(--muted);margin:0}
+.atlas-route-context .inspector-route{font:12px var(--mono)}
+.atlas-record-filters{margin:20px 0 16px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.atlas-record-filters>span{font:13px var(--body);color:var(--muted)}
+@media(max-width:760px){.atlas-route-context{grid-template-columns:1fr;gap:12px}.atlas-record-filters{gap:10px}.atlas-terrain .toolbar{padding:12px}.atlas-terrain .caption{line-height:1.8}}

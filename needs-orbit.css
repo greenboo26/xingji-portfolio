@@ -1,0 +1,40 @@
+/* User-approved Song-type orbit composition, 2026-11-16. Scoped to case 01. */
+
+.needs-orbit-preview { position: relative; width: 100%; min-width: 0; margin: 0; align-self: start; aspect-ratio: 544 / 690; overflow: hidden; }
+.needs-orbit-panel { position: absolute; left: 0; top: 0; width: 544px; height: 690px; border-left: 1px solid #b6a4da;
+  background: #dbd3ee; transform: scale(var(--scale,1)); transform-origin: top left; }
+.needs-orbit-context, .needs-orbit-footer { position: absolute; display: flex; justify-content: space-between; left: 29px; right: 29px;
+  font-size: 12px; letter-spacing: .055em; }
+.needs-orbit-context { top: 27px; }
+.needs-orbit-footer { bottom: 28px; color: #514071; }
+.needs-orbit-question { position: absolute; margin: 0; left: 29px; top: 67px; font: 34px/1.25 "SimSun", serif; color: #443378; }
+.needs-orbit-orbit { position: absolute; left: var(--left); top: var(--top); width: var(--w); height: var(--h);
+  border: 1px solid var(--line); border-radius: 50%; transform: rotate(var(--angle)); pointer-events: none; }
+.needs-orbit-sun, .needs-orbit-sun-base { position: absolute; width: 224px; height: 224px; border-radius: 50%; }
+.needs-orbit-sun-base { left: 42px; top: 215px; background: #9e8bc3; }
+.needs-orbit-sun { left: 32px; top: 203px; display: grid; place-content: center; justify-items: center; row-gap: 17px; padding-bottom: 14px;
+  background: #4b399c; color: #fbfaf6; font-family: "SimSun", serif; }
+.needs-orbit-sun strong { font: 400 132px/.85 "SimSun", serif; }
+.needs-orbit-sun span { font: 18px/1.3 "SimSun", serif; letter-spacing: .08em; }
+.needs-orbit-planet { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); width: 44px; height: 44px;
+  border: 0; padding: 0; border-radius: 50%; color: #3f306c; background: transparent; cursor: pointer; z-index: 1; }
+.needs-orbit-planet::before { content: ""; position: absolute; top: 50%; left: 50%; width: 12px; height: 12px;
+  transform: translate(-50%,-50%); border: 1px solid #8876af;
+  border-radius: 50%; background: #dbd3ee; }
+.needs-orbit-planet:is(:hover,:focus-visible,[aria-expanded=true]) { z-index: 2; }
+.needs-orbit-planet:focus-visible { outline: 2px solid #4b399c; }
+.needs-orbit-label { position: absolute; text-align: left; left: var(--label-x); top: var(--label-y); white-space: nowrap;
+  color: #3a2a65; font: 19px/1.3 "SimSun",serif; pointer-events: auto; }
+.needs-orbit-detail { display: block; font: 12px/1.45 "Microsoft YaHei", sans-serif; padding-top: 5px; color: #4b3a70; }
+.needs-orbit-label > span { background: #dbd3ee; }
+.needs-orbit-detail { width: max-content; }
+.needs-orbit-detail[hidden] { display: none; }
+.needs-orbit-planet[aria-expanded=true] .needs-orbit-label > span:first-child { font-weight: 700; }
+
+.needs-orbit-preview { color: #322354; font-family: "Microsoft YaHei", sans-serif; background: #dbd3ee; }
+.needs-orbit-preview *, .needs-orbit-preview *::before { box-sizing: border-box; }
+.needs-orbit-question { letter-spacing: normal; }
+.needs-orbit-footer a { text-decoration: none; }
+.needs-orbit-footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.needs-orbit-footer a:focus-visible { outline: 2px solid #4b399c; outline-offset: 5px; }
+@media (max-width: 760px) { .needs-orbit-preview { margin-bottom: 20px; } .needs-orbit-panel { border-left: 0; } }
